@@ -1,0 +1,55 @@
+@import "../../Sass/mixins";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introductionBackground img {
+  width: 100%;
+  height: calc(100vh - 100px);
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .introductionBackground img {
+    object-fit: fill;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introductionBackground img {
+    height: 230px;
+  }
+}
+
+.introductionContent {
+  margin: 7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.introductionContent :is(h1, p) {
+  margin: 0;
+  direction: rtl;
+}
+
+.introductionContent p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #606060;
+}
+
+@media (max-width: 992px) {
+  .introductionContent p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../Sass/mixins";
+
+.header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, .3);
+  backdrop-filter: blur(10px);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgb(128, 128, 128, .3);
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 70px;
+  }
+}
+
+.header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3%;
+}
+
+nav .flag {
+  width: 100px;
+  border-radius: 7px;
+}
+
+@media (max-width: 500px) {
+  nav .flag {
+    width: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 1.125rem;
+  }
+}
