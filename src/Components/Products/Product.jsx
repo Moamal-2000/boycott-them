@@ -6,7 +6,15 @@ import {
 } from "../../features/globalSlice";
 import styles from "./Product.module.scss";
 
-const Product = ({ productName, imgUrl, type, scale, id }) => {
+const Product = ({
+  productName,
+  productImg,
+  replacementImg,
+  type,
+  scale,
+  replacementScale,
+  id,
+}) => {
   const dispatch = useDispatch();
 
   function activeProductsSlider() {
@@ -18,7 +26,7 @@ const Product = ({ productName, imgUrl, type, scale, id }) => {
     <div className={`${styles.product} mix ${type}`} title={productName}>
       <div className={styles.imgHolder}>
         <img
-          src={imgUrl}
+          src={productImg}
           alt={productName}
           style={{ transform: `scale(${scale ? scale : 1})` }}
           onClick={() => activeProductsSlider()}
@@ -29,9 +37,11 @@ const Product = ({ productName, imgUrl, type, scale, id }) => {
 
       <div className={styles.imgHolder}>
         <img
-          src={imgUrl}
+          src={replacementImg}
           alt={productName}
-          style={{ transform: `scale(${scale ? scale : 1})` }}
+          style={{
+            transform: `scale(${replacementScale ? replacementScale : 1})`,
+          }}
           onClick={() => activeProductsSlider()}
         />
       </div>
