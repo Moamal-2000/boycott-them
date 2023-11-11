@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Tajawal", sans-serif;
   background-color: #f1f1f1;
-  color: black;
+  color: #2f2f2f;
 }
 
 a {
@@ -29,4 +29,15 @@ img {
 .container {
   width: 92%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+::selection {
+  color: #fff;
+  background-color: gray;
 }

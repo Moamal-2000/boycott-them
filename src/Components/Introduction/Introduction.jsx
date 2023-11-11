@@ -5,7 +5,10 @@ const Introduction = () => {
     <>
       <div className={styles.container}>
         <div className={styles.introductionBackground}>
-          <img src="assets/images/headimg.webp" alt="palestine flag" />
+          <img
+            src="https://raw.githubusercontent.com/Moamal-2000/boycott-them/main/src/assets/global-images/headimg.webp"
+            alt="palestine flag"
+          />
         </div>
 
         <div className={styles.introductionContent}>

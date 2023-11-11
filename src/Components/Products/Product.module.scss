@@ -1,0 +1,80 @@
+@import "../../Sass/mixins";
+
+.product {
+  width: 100%;
+  height: 220px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media (max-width: 376px) {
+  .product {
+    height: 200px;
+  }
+}
+
+.product .imgHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.product .imgHolder:first-child img {
+  filter: grayscale(1);
+}
+
+.product .dividingLine {
+  height: 100%;
+  width: 2px;
+  background-color: #dadada;
+}
+
+.product img {
+  width: 60%;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .product img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 376px) {
+  .product img {
+    width: 70%;
+  }
+}
+
+.product>i {
+  user-select: none;
+  position: absolute;
+  bottom: 14px;
+}
+
+.checkMark {
+  font-size: 1.3rem;
+  color: #1ac717;
+  right: calc(50% - 34px);
+}
+
+.axeMark {
+  font-size: 1.4rem;
+  color: #ff0000;
+  left: 14px;
+}

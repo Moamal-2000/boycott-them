@@ -1,6 +1,6 @@
 @import "../../../Sass/mixins";
 
-.overlay {
+.slider {
   position: fixed;
   left: 0;
   top: 0;
@@ -10,37 +10,52 @@
   background-color: rgba(0, 0, 0, .6);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 50px;
-  transition: opacity .2s;
-  opacity: 0;
-  pointer-events: none;
+  user-select: none;
 }
 
-.overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.overlay .productName {
+.slider .productName {
   color: #fff;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 4rem;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto 30px;
+  user-select: text;
 }
 
-.overlay .imgHolder img {
+@media (max-width: 992px) {
+  .slider .productName {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider .productName {
+    font-size: 2rem;
+  }
+}
+
+.slider .imgHolder img {
   width: 350px;
   height: 350px;
 }
 
-@media (max-width: 768px) {
-  .overlay .imgHolder img {
+@media (max-width: 992px) {
+  .slider .imgHolder img {
     width: 250px;
     height: 250px;
   }
 }
 
-.overlay> :is(.arrowLeft, .arrowRight) {
+@media (max-width: 768px) {
+  .slider .imgHolder img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+:is(.arrowLeft, .arrowRight) {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -48,18 +63,32 @@
   color: #fff;
   font-size: 1.6rem;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   z-index: 2;
   transition: background-color .2s;
   background-color: rgba(0, 0, 0, .04);
 }
 
+.arrowLeft {
+  left: 0;
+}
+
+.arrowRight {
+  right: 0;
+}
+
 @media (max-width: 768px) {
-  .overlay> :is(.arrowLeft, .arrowRight) {
+  :is(.arrowLeft, .arrowRight) {
     padding: 40px;
   }
 }
 
-.overlay> :is(.arrowLeft, .arrowRight):hover {
+@media (max-width: 500px) {
+  :is(.arrowLeft, .arrowRight) {
+    padding: 30px;
+  }
+}
+
+:is(.arrowLeft, .arrowRight):hover {
   background-color: rgba(0, 0, 0, .15);
 }

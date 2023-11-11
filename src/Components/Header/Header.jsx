@@ -6,7 +6,7 @@ const Header = () => {
       <nav>
         <a href="#body">
           <img
-            src="assets/images/flag.webp"
+            src="https://raw.githubusercontent.com/Moamal-2000/boycott-them/main/src/assets/global-images/flag.webp"
             alt="palestine flag"
             className={styles.flag}
           />
