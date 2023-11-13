@@ -11,16 +11,18 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/kiri.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/picon.webp`,
     type: "dairy",
     scale: .8,
+    replacementScale: .8,
     id: 2,
   },
   {
     productImg: `${boycottUrl}/president.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/teama.webp`,
     type: "dairy",
     scale: .9,
+    replacementScale: 1.1,
     id: 3,
   },
   {
@@ -53,7 +55,7 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/nescafe.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/misr cafe.webp`,
     type: "companies drinks",
     scale: .8,
     id: 8,
@@ -151,9 +153,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/chipsy.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/big chips.webp`,
     type: "luxuries",
     scale: .7,
+    replacementScale: 1.1,
     id: 22,
   },
   {
@@ -297,6 +300,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/.webp`,
     type: "detergents",
     scale: .4,
+    replacementScale: .6,
     id: 42,
   },
   {
@@ -308,9 +312,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/nido.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/latteria.webp`,
     type: "detergents",
     scale: .55,
+    replacementScale: .8,
     id: 44,
   },
   {
@@ -336,9 +341,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/tide.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/oxi.webp`,
     type: "detergents",
     scale: .55,
+    replacementScale: .65,
     id: 48,
   },
   {
@@ -378,9 +384,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/fairy.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/oxi-cleaner.webp`,
     type: "detergents",
     scale: .35,
+    replacementScale: 1.1,
     id: 54,
   },
   {
@@ -392,9 +399,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/head-shoulders.webp`,
-    replacementImg: `${replacementUrl}/.webp`,
+    replacementImg: `${replacementUrl}/ganozahi.webp`,
     type: "detergents",
     scale: .35,
+    replacementScale: .5,
     id: 56,
   },
   {

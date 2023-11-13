@@ -24,12 +24,11 @@ const Product = ({
 
   return (
     <div className={`${styles.product} mix ${type}`} title={productName}>
-      <div className={styles.imgHolder}>
+      <div className={styles.imgHolder} onClick={() => activeProductsSlider()}>
         <img
           src={productImg}
           alt={productName}
           style={{ transform: `scale(${scale ? scale : 1})` }}
-          onClick={() => activeProductsSlider()}
         />
       </div>
 
