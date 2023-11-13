@@ -1,3 +1,4 @@
+import { globalUrl } from "../../data/productsData";
 import styles from "./Header.module.scss"
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
       <nav>
         <a href="#body">
           <img
-            src="https://raw.githubusercontent.com/Moamal-2000/boycott-them/main/src/assets/global-images/flag.webp"
+            src={`${globalUrl}/flag.webp`}
             alt="palestine flag"
             className={styles.flag}
           />

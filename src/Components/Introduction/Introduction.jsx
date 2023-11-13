@@ -1,3 +1,4 @@
+import { globalUrl } from "../../data/productsData";
 import styles from "./Introduction.module.scss";
 
 const Introduction = () => {
@@ -6,7 +7,7 @@ const Introduction = () => {
       <div className={styles.container}>
         <div className={styles.introductionBackground}>
           <img
-            src="https://raw.githubusercontent.com/Moamal-2000/boycott-them/main/src/assets/global-images/headimg.webp"
+            src={`${globalUrl}/headimg.webp`}
             alt="palestine flag"
           />
         </div>
