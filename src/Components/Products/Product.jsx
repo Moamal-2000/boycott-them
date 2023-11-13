@@ -5,6 +5,7 @@ import {
   toggleProductsSlider,
 } from "../../features/globalSlice";
 import styles from "./Product.module.scss";
+import { globalUrl } from "../../data/productsData";
 
 const Product = ({
   productName,
@@ -17,10 +18,12 @@ const Product = ({
 }) => {
   const dispatch = useDispatch();
 
+
   function activeProductsSlider() {
     dispatch(toggleProductsSlider(true));
     dispatch(changeSliderProduct(id - 1));
   }
+
 
   return (
     <div className={`${styles.product} mix ${type}`} title={productName}>
@@ -36,7 +39,7 @@ const Product = ({
 
       <div className={styles.imgHolder}>
         <img
-          src={replacementImg}
+          src={replacementImg ? replacementImg : `${globalUrl}/placeholder-image.webp`}
           alt={productName}
           style={{
             transform: `scale(${replacementScale ? replacementScale : 1})`,
