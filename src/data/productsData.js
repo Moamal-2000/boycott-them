@@ -643,4 +643,11 @@ export const productsData = [
     scale: .8,
     id: 92,
   },
+  {
+    productImg: `${boycottUrl}/andomi.webp`,
+    replacementImg: `${replacementUrl}/.webp`,
+    type: "companies",
+    scale: 1,
+    id: 93,
+  },
 ];

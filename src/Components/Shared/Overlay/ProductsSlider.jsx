@@ -13,7 +13,7 @@ const ProductsSlider = () => {
   const { sliderCurrentValue, isProductsSliderActive } = useSelector(
     (state) => state.global
   );
-  const productImg = productsData[sliderCurrentValue]?.imgUrl;
+  const productImg = productsData[sliderCurrentValue]?.productImg;
   const productName = getProductName(productImg);
   const dispatch = useDispatch();
 
