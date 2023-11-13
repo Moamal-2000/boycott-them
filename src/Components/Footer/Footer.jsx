@@ -16,8 +16,14 @@ const Footer = () => {
       </div>
 
       <p>
-        تم التطوير بواسطة
-        <a href="https://www.facebook.com/S3eedKh3led">سعيد خالد</a>
+        <span> تم التطوير بواسطة</span>
+        <a href="https://www.facebook.com/S3eedKh3led" target="_blank">
+          سعيد خالد
+        </a>
+        <span>و</span>
+        <a href="https://www.facebook.com/MoamalAlaa109" target="_blank">
+          مؤمل علاء
+        </a>
       </p>
     </footer>
   );

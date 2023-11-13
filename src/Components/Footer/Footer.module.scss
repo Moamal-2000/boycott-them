@@ -19,6 +19,11 @@
   cursor: pointer;
 }
 
+.footer p>span {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
 .footer p>a:hover {
   text-decoration: underline;
 }
