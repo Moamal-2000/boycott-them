@@ -294,8 +294,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/pertplus.webp`,
+    replacementImg: `${replacementUrl}/ganozhi-shampo.webp`,
     type: "detergents",
     scale: .55,
+    replacementScale: 1.2,
     id: 45,
   },
   {
