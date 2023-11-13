@@ -38,6 +38,7 @@
   height: 100%;
   width: 2px;
   background-color: #dadada;
+  pointer-events: none;
 }
 
 .product img {
@@ -64,6 +65,7 @@
 
 .product>i {
   user-select: none;
+  pointer-events: none;
   position: absolute;
   bottom: 14px;
 }

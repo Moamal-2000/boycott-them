@@ -38,8 +38,9 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/7up.webp`,
+    replacementImg: `${replacementUrl}/kinza.webp`,
     type: "drinks",
-    scale: .3,
+    scale: .5,
     id: 6,
   },
   {
@@ -61,34 +62,36 @@ export const productsData = [
     productImg: `${boycottUrl}/pepsi.webp`,
     replacementImg: `${replacementUrl}/rc-cola.webp`,
     type: "drinks",
-    scale: .3,
-    replacementScale: 1.2,
+    scale: .6,
+    replacementScale: 1.05,
     id: 9,
   },
   {
     productImg: `${boycottUrl}/fanta.webp`,
-    replacementImg: `${replacementUrl}/rc-orange.webp`,
+    replacementImg: `${replacementUrl}/spiro-spathis.webp`,
     type: "drinks",
-    scale: .3,
-    replacementScale: .9,
+    scale: .5,
+    replacementScale: 1,
     id: 10,
   },
   {
     productImg: `${boycottUrl}/cocacola.webp`,
+    replacementImg: `${replacementUrl}/buzz.webp`,
     type: "drinks",
-    scale: .3,
+    scale: .5,
+    replacementScale: 1.1,
     id: 11,
   },
   {
     productImg: `${boycottUrl}/mirinda.webp`,
     type: "drinks",
-    scale: .3,
+    scale: .5,
     id: 12,
   },
   {
     productImg: `${boycottUrl}/fabercastell.webp`,
     type: "luxuries",
-    scale: .8,
+    scale: .9,
     id: 13,
   },
   {
@@ -166,7 +169,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/lays.webp`,
     type: "luxuries",
-    scale: .85,
+    scale: .9,
     id: 26,
   },
   {
@@ -178,7 +181,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/chiclets.webp`,
     type: "luxuries",
-    scale: .8,
+    scale: .85,
     id: 28,
   },
   {
@@ -207,7 +210,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/maggi.webp`,
     type: "companies",
-    scale: .75,
+    scale: .8,
     id: 33,
   },
   {
@@ -222,42 +225,42 @@ export const productsData = [
     productImg: `${boycottUrl}/baraka.webp`,
     replacementImg: `${replacementUrl}/tnwern.webp`,
     type: "drinks",
-    scale: .35,
-    replacementScale: .28,
+    scale: .55,
+    replacementScale: .55,
     id: 35,
   },
   {
     productImg: `${boycottUrl}/evian.webp`,
     replacementImg: `${replacementUrl}/sannin.webp`,
     type: "drinks",
-    scale: .25,
+    scale: .57,
     replacementScale: 1.1,
     id: 36,
   },
   {
     productImg: `${boycottUrl}/spraite.webp`,
     type: "drinks",
-    scale: .3,
+    scale: .5,
     id: 37,
   },
   {
     productImg: `${boycottUrl}/dew.webp`,
     type: "drinks",
-    scale: .3,
+    scale: .5,
     id: 38,
   },
   {
     productImg: `${boycottUrl}/tang.webp`,
     replacementImg: `${replacementUrl}/aruba.webp`,
     type: "drinks",
-    scale: .4,
+    scale: .5,
     replacementScale: .9,
     id: 39,
   },
   {
     productImg: `${boycottUrl}/aquafina.webp`,
     type: "drinks",
-    scale: .75,
+    scale: .8,
     id: 40,
   },
   {
@@ -269,14 +272,16 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/vanish.webp`,
     type: "detergents",
-    scale: .4,
+    scale: .5,
     replacementScale: .6,
     id: 42,
   },
   {
     productImg: `${boycottUrl}/comfort.webp`,
+    replacementImg: `${replacementUrl}/bingo.webp`,
     type: "detergents",
     scale: .8,
+    replacementScale: 1.1,
     id: 43,
   },
   {
@@ -290,7 +295,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/pertplus.webp`,
     type: "detergents",
-    scale: .3,
+    scale: .55,
     id: 45,
   },
   {
@@ -301,8 +306,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/persil.webp`,
+    replacementImg: `${replacementUrl}/prino.webp`,
     type: "detergents",
-    scale: .45,
+    scale: .5,
+    replacementScale: 1.3,
     id: 47,
   },
   {
@@ -321,12 +328,15 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/omo.webp`,
+    replacementImg: `${replacementUrl}/bahar.webp`,
     type: "detergents",
     scale: .55,
+    replacementScale: .9,
     id: 50,
   },
   {
     productImg: `${boycottUrl}/johnson.webp`,
+    replacementImg: `${replacementUrl}/dxn-chubby-baby.webp`,
     type: "detergents",
     scale: .6,
     id: 51,
@@ -334,20 +344,20 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/downy.webp`,
     type: "detergents",
-    scale: .5,
+    scale: .6,
     id: 52,
   },
   {
     productImg: `${boycottUrl}/general.webp`,
     type: "detergents",
-    scale: .5,
+    scale: .6,
     id: 53,
   },
   {
     productImg: `${boycottUrl}/fairy.webp`,
     replacementImg: `${replacementUrl}/oxi-cleaner.webp`,
     type: "detergents",
-    scale: .35,
+    scale: .6,
     replacementScale: 1.1,
     id: 54,
   },
@@ -361,7 +371,7 @@ export const productsData = [
     productImg: `${boycottUrl}/head-shoulders.webp`,
     replacementImg: `${replacementUrl}/ganozahi.webp`,
     type: "detergents",
-    scale: .35,
+    scale: .5,
     replacementScale: .5,
     id: 56,
   },
@@ -374,7 +384,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/camay.webp`,
     type: "detergents",
-    scale: .8,
+    scale: .9,
     id: 58,
   },
   {
@@ -409,13 +419,16 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/starbuks.webp`,
+    replacementImg: `${replacementUrl}/east-the-right-way.webp`,
     type: "companies",
     scale: .65,
+    replacementScale: .9,
     id: 64,
   },
   {
     productImg: `${boycottUrl}/halls.webp`,
     type: "luxuries",
+    scale: 1.1,
     id: 65,
   },
   {
@@ -437,14 +450,18 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/always.webp`,
+    replacementImg: `${replacementUrl}/nana.webp`,
     type: "luxuries",
     scale: .6,
+    replacementScale: .8,
     id: 69,
   },
   {
     productImg: `${boycottUrl}/pampers.webp`,
+    replacementImg: `${replacementUrl}/babyjoy.webp`,
     type: "luxuries",
     scale: .7,
+    replacementScale: .9,
     id: 70,
   },
   {
@@ -484,7 +501,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/crest.webp`,
     type: "luxuries",
-    scale: .8,
+    scale: .85,
     id: 77,
   },
   {
@@ -519,8 +536,10 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/carrefour.webp`,
+    replacementImg: `${replacementUrl}/lulu.webp`,
     type: "companies",
     scale: .85,
+    replacementScale: 1.2,
     id: 83,
   },
   {
