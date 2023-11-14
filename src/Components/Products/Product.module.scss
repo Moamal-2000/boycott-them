@@ -19,10 +19,10 @@
 }
 
 .product .imgHolder {
-  @include center-x-y;
   flex: 1;
-  cursor: pointer;
   height: 100%;
+  cursor: pointer;
+  @include center-x-y;
 }
 
 .product .imgHolder:first-child img {
@@ -39,28 +39,6 @@
   width: 2px;
   background-color: #dadada;
   pointer-events: none;
-}
-
-.product img {
-  width: 60%;
-}
-
-@media (max-width: 992px) {
-  .product img {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .product img {
-    width: 50%;
-  }
-}
-
-@media (max-width: 376px) {
-  .product img {
-    width: 70%;
-  }
 }
 
 .product>i {
