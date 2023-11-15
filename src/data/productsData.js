@@ -123,6 +123,7 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/kitkat.webp`,
+    replacementImg: `${replacementUrl}/break-time.webp`,
     type: "luxuries",
     scale: .75,
     id: 18,
@@ -135,12 +136,14 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/bounty.webp`,
+    replacementImg: `${replacementUrl}/palm-beach.webp`,
     type: "luxuries",
     scale: .8,
     id: 20,
   },
   {
     productImg: `${boycottUrl}/snuckers.webp`,
+    replacementImg: `${replacementUrl}/yonkers.webp`,
     type: "luxuries",
     scale: .8,
     id: 21,
@@ -161,6 +164,7 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/cheetos.webp`,
+    replacementImg: `${replacementUrl}/bravo-chips.webp`,
     type: "luxuries",
     scale: .65,
     id: 24,
@@ -371,6 +375,7 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/pril.webp`,
+    replacementImg: `${replacementUrl}/feba.webp`,
     type: "detergents",
     scale: .65,
     id: 55,
@@ -487,6 +492,7 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/kotex.webp`,
+    replacementImg: `${replacementUrl}/private.webp`,
     type: "luxuries",
     scale: .6,
     id: 73,
@@ -529,6 +535,7 @@ export const productsData = [
   },
   {
     productImg: `${boycottUrl}/nesquik.webp`,
+    replacementImg: `${replacementUrl}/cam-cacao.webp`,
     type: "luxuries",
     scale: .6,
     id: 80,
@@ -609,10 +616,54 @@ export const productsData = [
     scale: .5,
     id: 92,
   },
+
+
+
+
   {
     productImg: `${boycottUrl}/andomi.webp`,
     type: "companies",
     scale: .75,
     id: 93,
+  },
+  {
+    productImg: `${boycottUrl}/rexona.webp`,
+    type: "companies",
+    scale: .75,
+    id: 94,
+  },
+  {
+    productImg: `${boycottUrl}/dove.webp`,
+    replacementImg: `${replacementUrl}/aloev.webp`,
+    type: "companies",
+    scale: .75,
+    id: 95,
+  },
+  {
+    productImg: `${boycottUrl}/ceraVe.webp`,
+    type: "companies",
+    scale: .75,
+    id: 96,
+  },
+  {
+    productImg: `${boycottUrl}/cerelac.webp`,
+    replacementImg: `${replacementUrl}/hero-boby.webp`,
+    type: "companies",
+    scale: .75,
+    id: 97,
+  },
+  {
+    productImg: `${boycottUrl}/schweppes.webp`,
+    replacementImg: `${replacementUrl}/v7-vitamin-sparking.webp`,
+    type: "drink",
+    scale: .75,
+    id: 98,
+  },
+  {
+    productImg: `${boycottUrl}/larosh.webp`,
+    replacementImg: `${replacementUrl}/shaan-cream.webp`,
+    type: "companies",
+    scale: .75,
+    id: 98,
   },
 ];
