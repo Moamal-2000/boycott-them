@@ -49,7 +49,7 @@ export const productsData = [
     productImg: `${boycottUrl}/lipton.webp`,
     replacementImg: `${replacementUrl}/taj-tea.webp`,
     type: "drinks",
-    scale: .45,
+    scale: .47,
     replacementScale: .58,
     id: 7,
   },
@@ -126,6 +126,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/break-time.webp`,
     type: "luxuries",
     scale: .75,
+    replacementScale: .7,
     id: 18,
   },
   {
@@ -139,6 +140,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/palm-beach.webp`,
     type: "luxuries",
     scale: .8,
+    replacementScale: .9,
     id: 20,
   },
   {
@@ -146,6 +148,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/yonkers.webp`,
     type: "luxuries",
     scale: .8,
+    replacementScale: .9,
     id: 21,
   },
   {
@@ -167,6 +170,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/bravo-chips.webp`,
     type: "luxuries",
     scale: .65,
+    replacementScale: .62,
     id: 24,
   },
   {
@@ -196,7 +200,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/pizzahut.webp`,
     type: "restaurants",
-    scale: .55,
+    scale: .52,
     id: 29,
   },
   {
@@ -263,8 +267,8 @@ export const productsData = [
     productImg: `${boycottUrl}/tang.webp`,
     replacementImg: `${replacementUrl}/aruba.webp`,
     type: "drinks",
-    scale: .6,
-    replacementScale: .7,
+    scale: .55,
+    replacementScale: .65,
     id: 39,
   },
   {
@@ -276,13 +280,13 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/bonux.webp`,
     type: "detergents",
-    scale: .6,
+    scale: .58,
     id: 41,
   },
   {
     productImg: `${boycottUrl}/vanish.webp`,
     type: "detergents",
-    scale: .65,
+    scale: .63,
     id: 42,
   },
   {
@@ -297,8 +301,8 @@ export const productsData = [
     productImg: `${boycottUrl}/nido.webp`,
     replacementImg: `${replacementUrl}/latteria.webp`,
     type: "detergents",
-    scale: .55,
-    replacementScale: .6,
+    scale: .5,
+    replacementScale: .55,
     id: 44,
   },
   {
@@ -319,16 +323,16 @@ export const productsData = [
     productImg: `${boycottUrl}/persil.webp`,
     replacementImg: `${replacementUrl}/prino.webp`,
     type: "detergents",
-    scale: .62,
-    replacementScale: 1,
+    scale: .55,
+    replacementScale: .9,
     id: 47,
   },
   {
     productImg: `${boycottUrl}/tide.webp`,
     replacementImg: `${replacementUrl}/oxi.webp`,
     type: "detergents",
-    scale: .55,
-    replacementScale: .58,
+    scale: .5,
+    replacementScale: .53,
     id: 48,
   },
   {
@@ -341,16 +345,16 @@ export const productsData = [
     productImg: `${boycottUrl}/omo.webp`,
     replacementImg: `${replacementUrl}/bahar.webp`,
     type: "detergents",
-    scale: .67,
-    replacementScale: .75,
+    scale: .65,
+    replacementScale: .67,
     id: 50,
   },
   {
     productImg: `${boycottUrl}/johnson.webp`,
     replacementImg: `${replacementUrl}/dxn-chubby-baby.webp`,
     type: "detergents",
-    scale: .65,
-    replacementScale: .9,
+    scale: .62,
+    replacementScale: .86,
     id: 51,
   },
   {
@@ -378,6 +382,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/feba.webp`,
     type: "detergents",
     scale: .65,
+    replacementScale: .65,
     id: 55,
   },
   {
@@ -434,8 +439,8 @@ export const productsData = [
     productImg: `${boycottUrl}/starbuks.webp`,
     replacementImg: `${replacementUrl}/east-the-right-way.webp`,
     type: "companies",
-    scale: .5,
-    replacementScale: .7,
+    scale: .45,
+    replacementScale: .65,
     id: 64,
   },
   {
@@ -466,8 +471,8 @@ export const productsData = [
     productImg: `${boycottUrl}/always.webp`,
     replacementImg: `${replacementUrl}/nana.webp`,
     type: "luxuries",
-    scale: .5,
-    replacementScale: .65,
+    scale: .45,
+    replacementScale: .6,
     id: 69,
   },
   {
@@ -481,7 +486,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/luvs.webp`,
     type: "luxuries",
-    scale: .55,
+    scale: .52,
     id: 71,
   },
   {
@@ -495,6 +500,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/private.webp`,
     type: "luxuries",
     scale: .6,
+    replacementScale: .7,
     id: 73,
   },
   {
@@ -538,6 +544,7 @@ export const productsData = [
     replacementImg: `${replacementUrl}/cam-cacao.webp`,
     type: "luxuries",
     scale: .6,
+    replacementScale: .6,
     id: 80,
   },
   {
@@ -547,9 +554,9 @@ export const productsData = [
     id: 81,
   },
   {
-    productImg: "https://raw.githubusercontent.com/Moamal-2000/boycott-them/main/src/assets/boycott-products/PapaJohn's.svg",
+    productImg: `${boycottUrl}/PapaJohn's.svg`,
     type: "restaurants",
-    scale: .7,
+    scale: .65,
     id: 82,
   },
   {
@@ -575,7 +582,7 @@ export const productsData = [
   {
     productImg: `${boycottUrl}/vaseline.webp`,
     type: "luxuries",
-    scale: .76,
+    scale: .7,
     id: 86,
   },
   {
@@ -636,34 +643,38 @@ export const productsData = [
     productImg: `${boycottUrl}/dove.webp`,
     replacementImg: `${replacementUrl}/aloev.webp`,
     type: "companies",
-    scale: .75,
+    scale: .7,
+    replacementScale: .7,
     id: 95,
   },
   {
     productImg: `${boycottUrl}/ceraVe.webp`,
     type: "companies",
-    scale: .75,
+    scale: .8,
     id: 96,
   },
   {
     productImg: `${boycottUrl}/cerelac.webp`,
     replacementImg: `${replacementUrl}/hero-boby.webp`,
     type: "companies",
-    scale: .75,
+    scale: .55,
+    replacementScale: .68,
     id: 97,
   },
   {
     productImg: `${boycottUrl}/schweppes.webp`,
     replacementImg: `${replacementUrl}/v7-vitamin-sparking.webp`,
     type: "drink",
-    scale: .75,
+    scale: .7,
+    replacementScale: .8,
     id: 98,
   },
   {
     productImg: `${boycottUrl}/larosh.webp`,
     replacementImg: `${replacementUrl}/shaan-cream.webp`,
     type: "companies",
-    scale: .75,
-    id: 98,
+    scale: .92,
+    replacementScale: .62,
+    id: 99,
   },
 ];

@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { getProductName } from "../../Functions/GlobalFunctions";
 import { globalUrl } from "../../data/productsData";
 import {
+  changeClickedProductSlider,
   changeSliderProduct,
   toggleProductsSlider,
 } from "../../features/globalSlice";
@@ -20,9 +21,12 @@ const Product = ({
   const productName = getProductName(productImg);
   const replacementName = getProductName(replacementImg);
 
-  function activeProductsSlider() {
+  function activeProductsSlider(e) {
+    const imgEle = e.currentTarget.children[0];
     dispatch(toggleProductsSlider(true));
     dispatch(changeSliderProduct(id - 1));
+    console.log(e.currentTarget);
+    dispatch(changeClickedProductSlider(imgEle.src));
   }
 
   return (
@@ -30,7 +34,7 @@ const Product = ({
       <div
         className={styles.imgHolder}
         title={productName}
-        onClick={() => activeProductsSlider()}
+        onClick={(e) => activeProductsSlider(e)}
       >
         <img
           src={productImg}
@@ -42,7 +46,11 @@ const Product = ({
 
       <span className={styles.dividingLine}></span>
 
-      <div className={styles.imgHolder} title={replacementName}>
+      <div
+        className={styles.imgHolder}
+        title={replacementName}
+        onClick={(e) => activeProductsSlider(e)}
+      >
         <img
           src={
             replacementImg
@@ -54,7 +62,6 @@ const Product = ({
           style={{
             transform: `scale(${replacementScale ? replacementScale : 1})`,
           }}
-          onClick={() => activeProductsSlider()}
         />
       </div>
 
