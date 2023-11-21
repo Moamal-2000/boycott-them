@@ -5,4 +5,5 @@ import { manifestForPlugIn } from "./src/manifestForPlugIn";
 
 export default defineConfig({
   plugins: [react(), VitePWA(manifestForPlugIn)],
+  base: "/boycott-them/",
 });
