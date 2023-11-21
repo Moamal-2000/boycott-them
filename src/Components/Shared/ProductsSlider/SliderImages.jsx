@@ -1,22 +1,30 @@
 import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { productsData } from "../../../data/productsData";
-import styles from "./SliderImages.module.scss";
 import { getProductName } from "../../../Functions/GlobalFunctions";
+import useFilteredProducts from "../../../Hooks/useFilteredProducts";
+import styles from "./SliderImages.module.scss";
 
 const SliderImages = () => {
-  const { sliderCurrentValue, isProductsSliderActive, clickedProductSlider } =
+  const { sliderCurrentValue, clickedProductSlider } =
     useSelector((state) => state.global);
   const dispatch = useDispatch();
   const sliderImagesRef = useRef();
+  const { filteredProductsData, pathName } = useFilteredProducts();
 
   // console.log(clickedProductSlider);
 
 
   useEffect(() => {
-    const sliderImagesEle = sliderImagesRef.current;
-    sliderImagesEle.style.transform = `translate(-${sliderCurrentValue * 100}vw, -50%)`
+    const imagesContainerEle = sliderImagesRef.current;
+    
+    if (pathName) {
+      const productsEle = [...imagesContainerEle.children]
+      console.log(productsEle);
+      imagesContainerEle.style.transform = `translate(-${sliderCurrentValue * 100}vw, -50%)`
+      return 
+    }
 
+    imagesContainerEle.style.transform = `translate(-${sliderCurrentValue * 100}vw, -50%)`
   }, [sliderCurrentValue]);
 
 
@@ -29,9 +37,9 @@ const SliderImages = () => {
       const imgEle = ele.children[0].children[1]
       const productName = getProductName(clickedProductSlider)
 
-      console.log(imgEle.src);
-      console.log(clickedProductSlider);
-      console.log(imgEle.src === clickedProductSlider);
+      // console.log(imgEle.src);
+      // console.log(clickedProductSlider);
+      // console.log(imgEle.src === clickedProductSlider);
       if (imgEle.src === clickedProductSlider) {
         imgHolderEle.title = productName
         imgEle.src = clickedProductSlider
@@ -44,7 +52,7 @@ const SliderImages = () => {
 
   return (
     <div className={styles.sliderImages} ref={sliderImagesRef}>
-      {productsData.map(({ productImg, replacementImg, id }) => {
+      {filteredProductsData.map(({ productImg, replacementImg, id }) => {
         const productName = getProductName(productImg)
         const replacementName = getProductName(replacementImg)
         return (

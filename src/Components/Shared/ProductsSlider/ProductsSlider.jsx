@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { productsData } from "../../../data/productsData";
+import useFilteredProducts from "../../../Hooks/useFilteredProducts";
 import {
-  changeClickedProductSlider,
   changeSliderProduct,
   toggleProductsSlider,
 } from "../../../features/globalSlice";
@@ -10,11 +9,9 @@ import styles from "./ProductsSlider.module.scss";
 import SliderImages from "./SliderImages";
 
 const ProductsSlider = () => {
-  const { sliderCurrentValue } =
-    useSelector((state) => state.global);
+  const { sliderCurrentValue } = useSelector((state) => state.global);
   const dispatch = useDispatch();
-
-
+  const { filteredProductsData } = useFilteredProducts();
 
   function closeSlider(e) {
     const sliderEle = e.currentTarget;
@@ -23,7 +20,8 @@ const ProductsSlider = () => {
   }
 
   function nextProduct() {
-    const isNotLastItem = sliderCurrentValue !== productsData.length - 1;
+    const isNotLastItem =
+      sliderCurrentValue !== filteredProductsData.length - 1;
     if (isNotLastItem) dispatch(changeSliderProduct(sliderCurrentValue + 1));
   }
 
@@ -65,12 +63,8 @@ const ProductsSlider = () => {
     };
   }, [sliderCurrentValue]);
 
-
   return (
-    <div
-      className={`${styles.slider}`}
-      onClick={(e) => closeSlider(e)}
-    >
+    <div className={`${styles.slider}`} onClick={(e) => closeSlider(e)}>
       <div className={styles.arrowLeft} onClick={() => previousProduct()}>
         <i className="fa-solid fa-chevron-left "></i>
       </div>

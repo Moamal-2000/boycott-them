@@ -5,7 +5,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Products from "./Components/Products/Products";
 import PageNotFound from "./Components/Shared/Global/PageNotFound";
-import ProductsSlider from "./Components/Shared/Overlay/ProductsSlider";
+import ProductsSlider from "./Components/Shared/ProductsSlider/ProductsSlider";
 import { productsRoutes } from "./Routes/productsRoutes";
 
 function App() {
