@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProductName } from "../../../Functions/GlobalFunctions";
 import { productsData } from "../../../data/productsData";
 import {
   changeClickedProductSlider,
@@ -8,22 +7,14 @@ import {
   toggleProductsSlider,
 } from "../../../features/globalSlice";
 import styles from "./ProductsSlider.module.scss";
+import SliderImages from "./SliderImages";
 
 const ProductsSlider = () => {
-  const { sliderCurrentValue, isProductsSliderActive, clickedProductSlider } =
+  const { sliderCurrentValue } =
     useSelector((state) => state.global);
-  const product = productsData[sliderCurrentValue];
-  const productImg = product?.productImg;
-  const [productName, setProductName] = useState(getProductName(productImg));
-  const replacementImg = product?.replacementImg;
-  const replacementName = getProductName(replacementImg);
-  const sliderImgRef = useRef();
   const dispatch = useDispatch();
-  const clickedProduct = productsData.filter(
-    ({ productImg, replacementImg }) =>
-      productImg === clickedProductSlider ||
-      replacementImg === clickedProductSlider
-  )[0];
+
+
 
   function closeSlider(e) {
     const sliderEle = e.currentTarget;
@@ -50,17 +41,20 @@ const ProductsSlider = () => {
     if (isLeftArrow) previousProduct();
   }
 
-  function switchProduct(e) {
-    const target = e.currentTarget;
-    const imgEle = target.children[0];
-    const thumbnailHolderEle = imgEle.parentElement;
-    const sliderImgEle = sliderImgRef.current;
-    sliderImgEle.src = imgEle.src;
+  // function switchProduct(e) {
+  //   const target = e.currentTarget;
+  //   const imgEle = target.children[0];
+  //   const imgSrcUrl = imgEle.src;
+  //   const thumbnailHolderEle = imgEle.parentElement;
+  //   const sliderImgEle = sliderImgRef.current;
 
-    // thumbnailHolderEle.style.cssText = `
-    //   border-color: blue;
-    // `
-  }
+  //   dispatch(changeClickedProductSlider(imgSrcUrl));
+  //   // sliderImgEle.src = imgSrcUrl;
+
+  //   // thumbnailHolderEle.style.cssText = `
+  //   //   border-color: blue;
+  //   // `
+  // }
 
   useEffect(() => {
     const handleKeyDown = (e) => changeProductsByKeys(e);
@@ -71,54 +65,17 @@ const ProductsSlider = () => {
     };
   }, [sliderCurrentValue]);
 
-  useEffect(() => {
-    const { productImg, replacementImg } = clickedProduct;
-    if (productImg === clickedProductSlider)
-      setProductName(getProductName(clickedProductSlider));
-    if (replacementImg === clickedProductSlider)
-      setProductName(getProductName(clickedProductSlider));
-
-    sliderImgRef.current.src = clickedProductSlider;
-  }, [productName]);
 
   return (
     <div
-      className={`${styles.slider} ${isProductsSliderActive ? "active" : ""}`}
+      className={`${styles.slider}`}
       onClick={(e) => closeSlider(e)}
     >
       <div className={styles.arrowLeft} onClick={() => previousProduct()}>
         <i className="fa-solid fa-chevron-left "></i>
       </div>
 
-      <div className={styles.imgHolder}>
-        <p className={styles.productName}>{productName}</p>
-        <img
-          src={productImg}
-          alt={productName}
-          title={productName}
-          ref={sliderImgRef}
-        />
-      </div>
-
-      <div className={styles.productsContainer}>
-        <div
-          className={styles.thumbnailHolder}
-          title={productName}
-          onClick={(e) => switchProduct(e)}
-        >
-          <img src={productImg} alt={productName} />
-        </div>
-
-        {replacementImg && (
-          <div
-            className={styles.thumbnailHolder}
-            title={replacementName}
-            onClick={(e) => switchProduct(e)}
-          >
-            <img src={replacementImg} alt={replacementName} />
-          </div>
-        )}
-      </div>
+      <SliderImages />
 
       <div className={styles.arrowRight} onClick={() => nextProduct()}>
         <i className="fa-solid fa-chevron-right"></i>

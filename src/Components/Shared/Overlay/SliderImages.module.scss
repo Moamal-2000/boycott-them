@@ -1,0 +1,89 @@
+@import "../../../Sass/mixins";
+
+.sliderImages {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  transform: translateX(100vw);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.product {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgHolder img {
+  width: 350px;
+  height: 350px;
+}
+
+@media (max-width: 992px) {
+  .imgHolder img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgHolder img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.productsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 50px;
+  pointer-events: all;
+}
+
+.productsContainer .thumbnailHolder {
+  width: 74px;
+  height: 74px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.productsContainer .thumbnailHolder img {
+
+}
+
+.productName {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto 30px;
+  user-select: text;
+}
+
+@media (max-width: 992px) {
+  .productName {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .productName {
+    font-size: 2rem;
+  }
+}

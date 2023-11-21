@@ -18,7 +18,6 @@ const globalSlice = createSlice({
       return { ...state, sliderCurrentValue: payload };
     },
     changeClickedProductSlider: (state, { payload }) => {
-      console.log(payload);
       return { ...state, clickedProductSlider: payload };
     },
   },

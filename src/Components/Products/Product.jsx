@@ -25,7 +25,6 @@ const Product = ({
     const imgEle = e.currentTarget.children[0];
     dispatch(toggleProductsSlider(true));
     dispatch(changeSliderProduct(id - 1));
-    console.log(e.currentTarget);
     dispatch(changeClickedProductSlider(imgEle.src));
   }
 
