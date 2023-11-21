@@ -1,29 +1,15 @@
-import styles from "./Filters.module.scss"
+import { NavLink } from "react-router-dom";
+import styles from "./Filters.module.scss";
+import { filterData } from "../../data/filtersData";
 
 const Filters = () => {
   return (
     <div className={styles.filterButtons}>
-      <button className={styles.filterButton} data-filter=".companies">
-        الشركات
-      </button>
-      <button className={styles.filterButton} data-filter=".restaurants">
-        المطاعم
-      </button>
-      <button className={styles.filterButton} data-filter=".luxuries">
-        الكماليات
-      </button>
-      <button className={styles.filterButton} data-filter=".detergents">
-        المنظفات
-      </button>
-      <button className={styles.filterButton} data-filter=".dairy">
-        الألبآن
-      </button>
-      <button className={styles.filterButton} data-filter=".drinks">
-        المشروبات
-      </button>
-      <button className={styles.filterButton} data-filter="all">
-        الجميع
-      </button>
+      {filterData.map((filter) => (
+        <button className={styles.filterButton} key={filter.id}>
+          <NavLink to={filter.name}>{filter.text}</NavLink>
+        </button>
+      ))}
     </div>
   );
 };

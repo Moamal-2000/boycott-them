@@ -1,0 +1,28 @@
+@import "../../../Sass/mixins";
+
+.Container {
+  padding: 20px;
+}
+
+.Container div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.Container h2 {
+  font-size: 4rem;
+}
+
+.Container button {
+  cursor: pointer;
+  height: fit-content;
+  margin-top: 4px;
+}
+
+.Container button a {
+  display: inline-block;
+  color: #292929;
+  padding: 4px 10px;
+}
