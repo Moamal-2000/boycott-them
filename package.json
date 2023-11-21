@@ -13,7 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "homepage": "https://Moamal-2000.github.io/boycott-them",
+    "homepage": "https://moamal-2000.github.io/boycott-them",
     "@reduxjs/toolkit": "^1.9.7",
     "axios": "^1.5.0",
     "npm-check-updates": "^16.13.2",
